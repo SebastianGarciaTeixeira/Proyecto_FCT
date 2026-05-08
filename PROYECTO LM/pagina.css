@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: forestgreen;
+}
+
+header {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    font-family: Arial, sans-serif;
+    margin-bottom: 80px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 80px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 29px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: #00ff00;
+}
+
+.extra-text {
+    position: absolute;
+    right: 5%;
+    font-size: 14px;
+    color: #888;
+}
+
+.header-divider {
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 15px 10px;
+}
+
+/* Nav */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* SECCIÓN EVENTOS DESTACADOS */
+
+.contenedor-eventos{
+    max-width: 1350px;
+
+    margin: auto;
+    padding: 50px;
+
+    background-color: whitesmoke;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    border: 1px solid rgba(0,0,0,.05);
+}
+
+.titulo-eventos{
+    text-align: center;
+    font-size: 35px;
+    color: #222;
+    margin-bottom: 45px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* SLIDER */
+
+.slider-eventos{
+    display: flex;
+    gap: 25px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    padding-bottom: 15px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #1ea31e #e5e5e5;
+}
+
+/* SCROLLBAR */
+
+.slider-eventos::-webkit-scrollbar{
+    height: 10px;
+}
+
+.slider-eventos::-webkit-scrollbar-track{
+    background: #e5e5e5;
+    border-radius: 10px;
+}
+
+.slider-eventos::-webkit-scrollbar-thumb{
+    background: #1ea31e;
+    border-radius: 10px;
+}
+
+/* TARJETAS */
+
+.card-evento{
+    min-width: 320px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow:0 5px 18px rgba(0,0,0,.10);
+    flex-shrink: 0;
+}
+
+.card-evento img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-evento{
+    padding: 20px;
+    text-align: center;
+}
+
+.info-evento h3{
+    margin: 0;
+    color: #222;
+    font-size: 18px;
+}
+
+/* SECCIÓN SOBRE NOSOTROS */
+
+/* CAJA */
+.sobre-nosotros{
+    margin-top: 30px;
+}
+
+.contenedor-nosotros{
+    width: 80%;
+    max-width: 1330px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 60px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    border: 1px solid rgba(0,0,0,.05);
+}
+
+.titulo-nosotros{
+    text-align: center;
+    font-size: 35px;
+    color: #222;
+    margin-bottom: 50px;
+    font-weight: bold;
+    position: relative;
+}
+
+.contenido-nosotros{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.texto-nosotros{
+    flex: 1;
+    min-width: 320px;
+}
+
+.texto-nosotros p{
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* PROMOTORES */
+
+.promotores{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* TARJETAS */
+
+.card-promotor{
+    width: 220px;
+    background: #fff;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow:0 5px 18px rgba(0,0,0,.10);
+}
+
+.card-promotor img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-promotor{
+    padding: 20px;
+}
+
+.info-promotor h3{
+    margin: 0 0 8px;
+    color: #222;
+}
+
+.info-promotor span{
+    color: #1ea31e;
+    font-weight: 600;
+}
+
+
+/* FOOTER */
+footer {
+    margin-top: 80px;
+    background-color: #3a3a3a;
+    padding: 40px 40px;
+    border-top: 1px solid #ccc;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+footer h3 {
+    margin-bottom: 12px;
+    color: white;
+    text-decoration: underline;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-logo {
+    text-align: right;
+}
+
+.footer-logo p {
+    color: #ccc;
+    margin-bottom: 4px;
+}
+
+footer .social {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+footer .social a {
+    flex-shrink: 0;
+}
+
+footer .social i {
+    font-size: 28px;
+}
+
+footer .idioma {
+    text-align: center;
+}
+
+footer select {
+    padding: 6px 10px;
+}

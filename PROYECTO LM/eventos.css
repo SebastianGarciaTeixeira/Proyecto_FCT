@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: forestgreen;
+}
+
+header {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    font-family: Arial, sans-serif;
+    margin-bottom: 80px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 80px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 29px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: #00ff00;
+}
+
+.extra-text {
+    position: absolute;
+    right: 5%;
+    font-size: 14px;
+    color: #888;
+}
+
+.header-divider {
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 15px 10px;
+}
+
+/* Nav */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* MENSAJE (He reciclado código) */
+
+/* CAJA */
+.sobre-nosotros{
+    margin-top: 30px;
+}
+
+.contenedor-nosotros{
+    width: 80%;
+    max-width: 1330px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 60px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    border: 1px solid rgba(0,0,0,.05);
+}
+
+/* EVENTOS */
+
+.eventos-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.evento-card {
+  display: flex; 
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.evento-card img {
+  width: 120px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.evento-info {
+  padding: 15px;
+}
+
+.evento-info h3 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.evento-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
